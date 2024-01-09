@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Okay Demo</title>
+</head>
+<body>
+
+<!-- SCRIPTS -->
+<script src="./index.js"></script>
+
+<script>
+
+    /** ----------------------------------------
+        Demo
+     ---------------------------------------- */
+
+     const validate = schema({
+        title: String,
+        category: [Boolean, Array],
+    });
+
+    const okay = validate({
+        title: "Sander",
+        category: ["developer", "strategy"],
+        age: 34,
+    });
+
+    console.log(okay);
+
+</script>
+</body>
+</html>
